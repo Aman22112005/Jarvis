@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, android:windowSoftInputMode=adjustPan">
+  <title>Job Application Form</title>
+  <link rel="stylesheet" href="form.css">
+  <script src="main.js"></script>
+  
+  <script>
+  function redirect() {
+    setTimeout(function() {
+      window.location.href = "/form/Thankyou/index.html";
+    }, 2000); // wait 2 seconds to ensure form data is sent
+  }
+</script>
+
+</head>
+
+<body>
+  <div class="outer-box">
+    <div class="inner-box">
+       <div class="form-container">
+      <header class="joining">
+        <h1>Application Form</h1>
+        <p>Fill your information carefully and our team will contact you shortly</p>
+      </header>
+      <main class=" pad join">
+        <form id="application-form" method="POST" action="https://script.google.com/macros/s/AKfycbwsHDRbZKnQg3BXn30HzGct0U5TkSJttgw9U5u1U42x2c6G3xCZTijthOJWVhLoMKA/exec" onsubmit="redirect()">
+          <div class="form-section">
+            <label>Full Name <span class="required">*</span></label>
+            <input name="first-name" type="text" id="first-name" placeholder="eg. Ram Singh" required>
+          </div>
+          <div class="form-section">
+            <label>WhatsApp Number <span class="required">*</span></label>
+            <input name="whatsapp-number" type="number" id="whatsapp-number" placeholder="eg. 0123456789" required>
+          </div>
+          <div class="form-section">
+            <label>Email ID</label>
+            <input name="email-id" type="email" id="email-id" placeholder="@gmail.com" required>
+          </div>
+          <div class="form-section">
+            <label>Date of Birth <span class="required">*</span></label>
+            <input name="date-of-birth" type="date" id="date-of-birth" required>
+          </div>
+          <div class="form-section">
+            <label>Qualification <span class="required">*</span></label>
+            <select name="qualification" id="qualification" required>
+              <option value="">Select</option>
+              <option value="10th">10th</option>
+              <option value="10+2">10+2</option>
+              <option value="Undergraduate">Undergraduate</option>
+              <option value="Graduate">Graduate</option>
+              <option value="Post-graduate">Post-graduate</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label>Gender <span class="required">*</span></label>
+            <select name="gender" id="gender" required>
+              <option value="">Select</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+          <div class="form-section">
+            <label>State <span class="required">*</span></label>
+            <input name="state" id="address" required>
+          </div>
+          <input type="submit" id="submit" value="Submit">
+          </div>
+        </form>
+      </main>
+    </div>
+    <div class="circle c1"></div>
+    <div class="circle c2"></div>
+    <div class="circle c3"></div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
