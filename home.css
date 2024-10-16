@@ -6,7 +6,6 @@
 box-sizing: border-box;
 margin: 0;
 padding: 0;
-height: 100vh;
 }
 
 .flex{
@@ -40,6 +39,7 @@ color: #000;
 max-width: 1180px;
 margin-inline: auto;
 padding-inline: 20px;
+height:100vh;
 }
 
 .center{
